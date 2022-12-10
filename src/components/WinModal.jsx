@@ -7,10 +7,16 @@ function WinModal({ onAccept , winner }) {
         <div className='WinModal'>
             <form onSubmit={onAccept} >
                 <div className='WinModal-title'>
-                    <h3>¡Victoria!</h3>
+                    {
+                        (winner === '') ? <h3>¡Empate!</h3> : <h3>¡Victoria!</h3>
+                    }
                 </div>
                 <span className='WinModal-player'>
-                    El { (winner === 'X') ?  'Jugador 1' : 'Jugador 2' } ha ganado
+                    {
+                        (winner === '') 
+                        ? 'El juego ha concluido en empate'
+                        : `El ${ (winner === 'X') ?  'Jugador 1' : 'Jugador 2' } ha ganado`
+                    }
                 </span>
                 <button className='boton_submit' type='submit' >Aceptar</button>
             </form>

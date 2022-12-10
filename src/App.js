@@ -52,6 +52,10 @@ function App() {
       }
     }
 
+    if ( !boardState.includes('') && winner === '' ) {
+      toggleModal();
+    }
+
   }, 
   [boardState]);
 
@@ -74,6 +78,7 @@ function App() {
   const onAccept = (event) => {
     event.preventDefault();
     setPlayer( 'X' );
+    setWinner( '' );
     setBoardState(initialValue);
     toggleModal();
   }
