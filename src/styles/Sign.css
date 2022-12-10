@@ -1,0 +1,53 @@
+.Sign {
+    width: 100px;
+    height: 100px;
+
+    border: none;
+    background-color: transparent;
+
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+}
+
+.Sign:nth-child(2) {
+    border-right: 3px #FFF solid;
+    border-left: 3px #FFF solid;
+}
+
+.IndicatorSign {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+}
+
+.Sign--blue {
+    -webkit-animation: glow--blue 2s ease-in-out infinite alternate;
+    -moz-animation: glow--blue 2s ease-in-out infinite alternate;
+    animation: glow--blue 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow--blue {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #0f00e6, 0 0 30px #0f00e6;
+    }
+    to {
+        text-shadow: 0 0 15px #fff, 0 0 20px #4d6eff, 0 0 30px #4d6eff, 0 0 40px #4d6eff;
+    }
+}
+
+
+.Sign--red {
+    -webkit-animation: glow--red 2s ease-in-out infinite alternate;
+    -moz-animation: glow--red 2s ease-in-out infinite alternate;
+    animation: glow--red 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow--red {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #e60073, 0 0 30px #e60073;
+    }
+    to {
+        text-shadow: 0 0 15px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6;
+    }
+}
