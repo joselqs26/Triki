@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Triki/static/css/main.1da31a44.css",
-    "main.js": "/Triki/static/js/main.9c692cf1.js",
+    "main.js": "/Triki/static/js/main.b015b98c.js",
     "index.html": "/Triki/index.html",
     "main.1da31a44.css.map": "/Triki/static/css/main.1da31a44.css.map",
-    "main.9c692cf1.js.map": "/Triki/static/js/main.9c692cf1.js.map"
+    "main.b015b98c.js.map": "/Triki/static/js/main.b015b98c.js.map"
   },
   "entrypoints": [
     "static/css/main.1da31a44.css",
-    "static/js/main.9c692cf1.js"
+    "static/js/main.b015b98c.js"
   ]
 }
