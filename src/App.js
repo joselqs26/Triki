@@ -7,10 +7,9 @@ import { Board } from "./components/Board";
 import { Indicator } from "./components/Indicator";
 import { Modal } from "./components/Modal";
 import { WinModal } from "./components/WinModal";
+import { Footer } from './components/Footer';
 
 function App() {
-
-
   const initialValue = ['','','','','','','','',''];
 
 
@@ -75,11 +74,15 @@ function App() {
     }
   }
 
-  const onAccept = (event) => {
+  const onReset = (event) => {
     event.preventDefault();
     setPlayer( 'X' );
     setWinner( '' );
     setBoardState(initialValue);
+  }
+
+  const onAccept = (event) => {
+    onReset(event);
     toggleModal();
   }
 
@@ -88,12 +91,13 @@ function App() {
       <header className="App-header">
         <h3>Triki</h3>
       </header>
-      <Indicator player={player} />
+      <Indicator player={player} onReset={onReset} />
       <Board boardState={boardState} onPlay={onPlay} player={player} />
 
       <Modal openModal={openModal}>
         <WinModal onAccept={onAccept} winner={winner} />
       </Modal>
+      <Footer />
     </div>
   );
 }

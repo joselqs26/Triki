@@ -1,19 +1,47 @@
 .indicator {
-    padding: 10px 25px;
-    margin-bottom: 30px;
-    min-width: 250px;
-    width: 40%;
-    max-width: 350px;
+  padding: 5px 25px;
+  margin-bottom: 20px;
+  min-width: 250px;
+  width: 40%;
+  max-width: 350px;
 
+  text-align: center;
+
+  border-radius: 10px;
+  border: 3px #fff solid;
+}
+
+.indicator-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  
+}
 
-    border-radius: 10px;
-    border: 3px #fff solid;
+span {
+  height: min-content;
 }
 
 .indicator-label {
-    display: inline-block;
-    height: min-content;
+  display: inline-block;
+}
+
+.reset-button {
+  background: white;
+  border-radius: 5px;
+  color: #282c34;
+  border: 2px solid white;
+
+  font-size: 18px;
+  font-weight: 500;
+  padding: 6px;
+
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.reset-button:hover {
+  background: #282c34;
+  color: white;
+  border: 2px solid white;
 }
